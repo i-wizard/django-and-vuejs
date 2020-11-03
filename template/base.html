@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base</title>
+</head>
+<body>
+    <div id='app'>
+        {% block content%}
+
+        {%endblock%}
+
+    </div>
+    {% block file__js%}
+        all scripts must be outside the div that has the id of app
+    {%endblock%}
+</body>
+</html>
